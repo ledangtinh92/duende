@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\FormosProject\\beltone\\sample_source\\duende\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|d:\\formosproject\\beltone\\sample_source\\duende\\src\\duende.admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|solutionrelative:src\\duende.admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F817047F-018D-4F93-BDA5-58602073B634}|docker-compose.dcproj|d:\\formosproject\\beltone\\sample_source\\duende\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F817047F-018D-4F93-BDA5-58602073B634}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F817047F-018D-4F93-BDA5-58602073B634}|docker-compose.dcproj|d:\\formosproject\\beltone\\sample_source\\duende\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F817047F-018D-4F93-BDA5-58602073B634}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|d:\\formosproject\\beltone\\sample_source\\duende\\src\\duende.admin\\identityserverdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|solutionrelative:src\\duende.admin\\identityserverdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|d:\\formosproject\\beltone\\sample_source\\duende\\src\\duende.admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27CFE8D1-BFDE-4C5A-942C-44475CFE7783}|src\\duende.Admin\\duende.Admin.csproj|solutionrelative:src\\duende.admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\Program.cs",
+              "RelativeDocumentMoniker": "src\\duende.Admin\\Program.cs",
+              "ToolTip": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\Program.cs",
+              "RelativeToolTip": "src\\duende.Admin\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:46:12.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\FormosProject\\beltone\\sample_source\\duende\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "D:\\FormosProject\\beltone\\sample_source\\duende\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAADIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-11-07T08:21:58.753Z",
+              "WhenOpened": "2025-11-07T09:28:20.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose",
+              "DocumentMoniker": "D:\\FormosProject\\beltone\\sample_source\\duende\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "D:\\FormosProject\\beltone\\sample_source\\duende\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-07T09:28:18.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\duende.Admin\\appsettings.json",
+              "ToolTip": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\appsettings.json",
+              "RelativeToolTip": "src\\duende.Admin\\appsettings.json",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T09:18:23.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "identityserverdata.json",
+              "DocumentMoniker": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\identityserverdata.json",
+              "RelativeDocumentMoniker": "src\\duende.Admin\\identityserverdata.json",
+              "ToolTip": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.Admin\\identityserverdata.json",
+              "RelativeToolTip": "src\\duende.Admin\\identityserverdata.json",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T09:15:32.984Z",
               "EditorCaption": ""
             }
           ]

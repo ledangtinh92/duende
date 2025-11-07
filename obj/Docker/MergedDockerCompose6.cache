@@ -1,0 +1,229 @@
+name: dockercompose12918359848389183810
+services:
+  db:
+    container_name: skoruba-duende-identityserver-db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Password_123
+    image: mcr.microsoft.com/mssql/server:2017-CU20-ubuntu-16.04
+    networks:
+      identityserverui: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "7900"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: dbdata
+        target: /var/opt/mssql
+        volume: {}
+  duende.admin:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.Admin/Dockerfile
+    command:
+      - dotnet
+      - duende.Admin.dll
+      - /seed
+    container_name: skoruba-duende-identityserver-admin
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+      duende.sts.identity:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      AdminConfiguration__IdentityAdminBaseUrl: https://admin.skoruba.local
+      AdminConfiguration__IdentityAdminRedirectUri: https://admin.skoruba.local/signin-oidc
+      AdminConfiguration__IdentityServerBaseUrl: https://sts.skoruba.local
+      AdminConfiguration__RequireHttpsMetadata: "false"
+      ConnectionStrings__AdminAuditLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__AdminLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      DockerConfiguration__UpdateCaCertificate: "true"
+      IdentityServerData__Clients__0__AllowedCorsOrigins__0: https://admin.skoruba.local
+      IdentityServerData__Clients__0__ClientUri: https://admin.skoruba.local
+      IdentityServerData__Clients__0__FrontChannelLogoutUri: https://admin.skoruba.local/signin-oidc
+      IdentityServerData__Clients__0__PostLogoutRedirectUris__0: https://admin.skoruba.local/signout-callback-oidc
+      IdentityServerData__Clients__0__RedirectUris__0: https://admin.skoruba.local/signin-oidc
+      IdentityServerData__Clients__1__RedirectUris__0: https://admin-api.skoruba.local/swagger/oauth2-redirect.html
+      SSL_CERT_FILE: /usr/local/share/ca-extra/cacerts.crt
+      Serilog__WriteTo__1__Args__connectionString: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      VIRTUAL_HOST: admin.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-admin
+    networks:
+      identityserverui: null
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\identitydata.json
+        target: /app/identitydata.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\identityserverdata.json
+        target: /app/identityserverdata.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs
+        target: /usr/local/share/ca-extra
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  duende.admin.api:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.Admin.Api/Dockerfile
+    container_name: skoruba-duende-identityserver-admin-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      AdminApiConfiguration__ApiBaseUrl: https://admin-api.skoruba.local
+      AdminApiConfiguration__IdentityServerBaseUrl: https://sts.skoruba.local
+      AdminApiConfiguration__RequireHttpsMetadata: "false"
+      ConnectionStrings__AdminAuditLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__AdminLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      DockerConfiguration__UpdateCaCertificate: "true"
+      SSL_CERT_FILE: /usr/local/share/ca-extra/cacerts.crt
+      VIRTUAL_HOST: admin-api.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-admin-api
+    networks:
+      identityserverui: null
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs
+        target: /usr/local/share/ca-extra
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  duende.sts.identity:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.STS.Identity/Dockerfile
+    container_name: skoruba-duende-identityserver-sts-identity
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      AdminConfiguration__IdentityAdminBaseUrl: https://admin.skoruba.local
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true
+      DockerConfiguration__UpdateCaCertificate: "true"
+      IdentityServerOptions__Events__RaiseErrorEvents: "true"
+      IdentityServerOptions__Events__RaiseFailureEvents: "true"
+      IdentityServerOptions__Events__RaiseInformationEvents: "true"
+      IdentityServerOptions__Events__RaiseSuccessEvents: "true"
+      IdentityServerOptions__IssuerUri: https://sts.skoruba.local
+      IdentityServerOptions__KeyManagement__Enabled: "true"
+      SSL_CERT_FILE: /usr/local/share/ca-extra/cacerts.crt
+      VIRTUAL_HOST: sts.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-sts-identity
+    networks:
+      identityserverui:
+        aliases:
+          - sts.skoruba.local
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs
+        target: /usr/local/share/ca-extra
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  nginx-proxy:
+    container_name: nginx
+    image: jwilder/nginx-proxy
+    networks:
+      identityserverui:
+        aliases:
+          - sts.skoruba.local
+          - admin.skoruba.local
+          - admin-api.skoruba.local
+      proxy: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "80"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "443"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /tmp/docker.sock
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\vhost.d
+        target: /etc/nginx/vhost.d
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs
+        target: /etc/nginx/certs
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  identityserverui:
+    name: dockercompose12918359848389183810_identityserverui
+    driver: bridge
+  proxy:
+    name: dockercompose12918359848389183810_proxy
+    driver: bridge
+volumes:
+  dbdata:
+    name: dockercompose12918359848389183810_dbdata
+    driver: local
