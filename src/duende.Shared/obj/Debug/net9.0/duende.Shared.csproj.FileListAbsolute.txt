@@ -1,0 +1,12 @@
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\bin\Debug\net9.0\duende.Shared.deps.json
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\bin\Debug\net9.0\duende.Shared.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\bin\Debug\net9.0\duende.Shared.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.csproj.AssemblyReference.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.AssemblyInfoInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.AssemblyInfo.cs
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.csproj.CoreCompileInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\refint\duende.Shared.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\duende.Shared.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Shared\obj\Debug\net9.0\ref\duende.Shared.dll

@@ -1,0 +1,460 @@
+name: dockercompose12918359848389183810
+services:
+  db:
+    container_name: skoruba-duende-identityserver-db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Password_123
+    image: mcr.microsoft.com/mssql/server:2017-CU20-ubuntu-16.04
+    networks:
+      identityserverui: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "7900"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: dbdata
+        target: /var/opt/mssql
+        volume: {}
+  duende.admin:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.Admin/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: duende.Admin
+      target: base
+    command:
+      - dotnet
+      - duende.Admin.dll
+      - /seed
+    container_name: skoruba-duende-identityserver-admin
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+      duende.sts.identity:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      AdminConfiguration__IdentityAdminBaseUrl: https://admin.skoruba.local
+      AdminConfiguration__IdentityAdminRedirectUri: https://admin.skoruba.local/signin-oidc
+      AdminConfiguration__IdentityServerBaseUrl: https://sts.skoruba.local
+      AdminConfiguration__RequireHttpsMetadata: "false"
+      ConnectionStrings__AdminAuditLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__AdminLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      DockerConfiguration__UpdateCaCertificate: "true"
+      IdentityServerData__Clients__0__AllowedCorsOrigins__0: https://admin.skoruba.local
+      IdentityServerData__Clients__0__ClientUri: https://admin.skoruba.local
+      IdentityServerData__Clients__0__FrontChannelLogoutUri: https://admin.skoruba.local/signin-oidc
+      IdentityServerData__Clients__0__PostLogoutRedirectUris__0: https://admin.skoruba.local/signout-callback-oidc
+      IdentityServerData__Clients__0__RedirectUris__0: https://admin.skoruba.local/signin-oidc
+      IdentityServerData__Clients__1__RedirectUris__0: https://admin-api.skoruba.local/swagger/oauth2-redirect.html
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+      Serilog__WriteTo__1__Args__connectionString: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      VIRTUAL_HOST: admin.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-admin:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/net8.0/duende.Admin.dll" /seed'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      identityserverui: null
+    tty: true
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\identitydata.json
+        target: /app/identitydata.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\identityserverdata.json
+        target: /app/identityserverdata.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs\cacerts.crt
+        target: /usr/local/share/ca-certificates/cacerts.crt
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\src\duende.Admin
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net6.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  duende.admin.api:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.Admin.Api/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: duende.Admin.Api
+      target: base
+    container_name: skoruba-duende-identityserver-admin-api
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      AdminApiConfiguration__ApiBaseUrl: https://admin-api.skoruba.local
+      AdminApiConfiguration__IdentityServerBaseUrl: https://sts.skoruba.local
+      AdminApiConfiguration__RequireHttpsMetadata: "false"
+      ConnectionStrings__AdminAuditLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__AdminLogDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      DockerConfiguration__UpdateCaCertificate: "true"
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+      VIRTUAL_HOST: admin-api.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-admin-api:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net9.0/duende.Admin.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      identityserverui: null
+    tty: true
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs\cacerts.crt
+        target: /usr/local/share/ca-certificates/cacerts.crt
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.Api
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net6.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  duende.sts.identity:
+    build:
+      context: D:\FormosProject\beltone\sample_source\duende
+      dockerfile: src/duende.STS.Identity/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: duende.STS.Identity
+      target: base
+    container_name: skoruba-duende-identityserver-sts-identity
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      AdminConfiguration__IdentityAdminBaseUrl: https://admin.skoruba.local
+      ConnectionStrings__ConfigurationDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__DataProtectionDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__IdentityDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      ConnectionStrings__PersistedGrantDbConnection: Server=db;Database=IdentityServerAdmin;User Id=sa;Password=Password_123;MultipleActiveResultSets=true
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      DockerConfiguration__UpdateCaCertificate: "true"
+      IdentityServerOptions__Events__RaiseErrorEvents: "true"
+      IdentityServerOptions__Events__RaiseFailureEvents: "true"
+      IdentityServerOptions__Events__RaiseInformationEvents: "true"
+      IdentityServerOptions__Events__RaiseSuccessEvents: "true"
+      IdentityServerOptions__IssuerUri: https://sts.skoruba.local
+      IdentityServerOptions__KeyManagement__Enabled: "true"
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+      VIRTUAL_HOST: sts.skoruba.local
+      VIRTUAL_PORT: "8080"
+    image: skoruba-duende-identityserver-sts-identity:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net9.0/duende.STS.Identity.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      identityserverui:
+        aliases:
+          - sts.skoruba.local
+    tty: true
+    volumes:
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\serilog.json
+        target: /app/serilog.json
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs\cacerts.crt
+        target: /usr/local/share/ca-certificates/cacerts.crt
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\src\duende.STS.Identity
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\tinh.le\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net6.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  nginx-proxy:
+    container_name: nginx
+    image: jwilder/nginx-proxy
+    networks:
+      identityserverui:
+        aliases:
+          - sts.skoruba.local
+          - admin.skoruba.local
+          - admin-api.skoruba.local
+      proxy: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "80"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "443"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /tmp/docker.sock
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\vhost.d
+        target: /etc/nginx/vhost.d
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\FormosProject\beltone\sample_source\duende\shared\nginx\certs
+        target: /etc/nginx/certs
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  identityserverui:
+    name: dockercompose12918359848389183810_identityserverui
+    driver: bridge
+  proxy:
+    name: dockercompose12918359848389183810_proxy
+    driver: bridge
+volumes:
+  dbdata:
+    name: dockercompose12918359848389183810_dbdata
+    driver: local

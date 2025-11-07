@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\duende.Admin.Api.props" />
+</Project>

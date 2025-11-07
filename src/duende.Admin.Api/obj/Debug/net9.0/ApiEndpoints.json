@@ -1,0 +1,3208 @@
+[
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "Get",
+    "RelativePath": "api/ApiResources",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourcesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "Post",
+    "RelativePath": "api/ApiResources",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiResourceApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourceApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "Put",
+    "RelativePath": "api/ApiResources",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiResourceApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourceApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "Get",
+    "RelativePath": "api/ApiResources/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourceApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "Delete",
+    "RelativePath": "api/ApiResources/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "GetProperties",
+    "RelativePath": "api/ApiResources/{id}/Properties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourcePropertiesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "PostProperty",
+    "RelativePath": "api/ApiResources/{id}/Properties",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "apiPropertyApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourcePropertyApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourcePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "GetSecrets",
+    "RelativePath": "api/ApiResources/{id}/Secrets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiSecretsApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "PostSecret",
+    "RelativePath": "api/ApiResources/{id}/Secrets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clientSecretApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiSecretApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiSecretApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "CanInsertApiResource",
+    "RelativePath": "api/ApiResources/CanInsertApiResource",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "CanInsertApiResourceProperty",
+    "RelativePath": "api/ApiResources/CanInsertApiResourceProperty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "GetProperty",
+    "RelativePath": "api/ApiResources/Properties/{propertyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiResourcePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "DeleteProperty",
+    "RelativePath": "api/ApiResources/Properties/{propertyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "GetSecret",
+    "RelativePath": "api/ApiResources/Secrets/{secretId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secretId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiResources.ApiSecretApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiResourcesController",
+    "Method": "DeleteSecret",
+    "RelativePath": "api/ApiResources/Secrets/{secretId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secretId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "GetScopes",
+    "RelativePath": "api/ApiScopes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "PostScope",
+    "RelativePath": "api/ApiScopes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiScopeApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopeApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration.ApiScopeDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "PutScope",
+    "RelativePath": "api/ApiScopes",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiScopeApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopeApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "GetScope",
+    "RelativePath": "api/ApiScopes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopeApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "DeleteScope",
+    "RelativePath": "api/ApiScopes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "GetScopeProperties",
+    "RelativePath": "api/ApiScopes/{id}/Properties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopePropertiesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "PostProperty",
+    "RelativePath": "api/ApiScopes/{id}/Properties",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "apiScopePropertyApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopePropertyApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "CanInsertApiScope",
+    "RelativePath": "api/ApiScopes/CanInsertApiScope",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "CanInsertApiScopeProperty",
+    "RelativePath": "api/ApiScopes/CanInsertApiScopeProperty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "GetProperty",
+    "RelativePath": "api/ApiScopes/Properties/{propertyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.ApiScopes.ApiScopePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ApiScopesController",
+    "Method": "DeleteProperty",
+    "RelativePath": "api/ApiScopes/Properties/{propertyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "Get",
+    "RelativePath": "api/Clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientsApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "Post",
+    "RelativePath": "api/Clients",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "client",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "Put",
+    "RelativePath": "api/Clients",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "client",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "Get",
+    "RelativePath": "api/Clients/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "Delete",
+    "RelativePath": "api/Clients/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetClaims",
+    "RelativePath": "api/Clients/{id}/Claims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientClaimsApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "PostClaim",
+    "RelativePath": "api/Clients/{id}/Claims",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clientClaimApiDto",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientClaimApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientClaimApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetProperties",
+    "RelativePath": "api/Clients/{id}/Properties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientPropertiesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "PostProperty",
+    "RelativePath": "api/Clients/{id}/Properties",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clientPropertyApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientPropertyApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientPropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetSecrets",
+    "RelativePath": "api/Clients/{id}/Secrets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientSecretsApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "PostSecret",
+    "RelativePath": "api/Clients/{id}/Secrets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clientSecretApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientSecretApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientSecretApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "CanInsertClient",
+    "RelativePath": "api/Clients/CanInsertClient",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "clientId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isCloned",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetClaim",
+    "RelativePath": "api/Clients/Claims/{claimId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientClaimApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "DeleteClaim",
+    "RelativePath": "api/Clients/Claims/{claimId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "PostClientClone",
+    "RelativePath": "api/Clients/Clone",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "client",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientCloneApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetAccessTokenTypes",
+    "RelativePath": "api/Clients/GetAccessTokenTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetDPoPValidationModes",
+    "RelativePath": "api/Clients/GetDPoPValidationModes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetGrantTypes",
+    "RelativePath": "api/Clients/GetGrantTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "includeObsoleteGrants",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetHashTypes",
+    "RelativePath": "api/Clients/GetHashTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetProtocolTypes",
+    "RelativePath": "api/Clients/GetProtocolTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetScopes",
+    "RelativePath": "api/Clients/GetScopes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scope",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "excludeIdentityResources",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "excludeApiScopes",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetSecretTypes",
+    "RelativePath": "api/Clients/GetSecretTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetSigningAlgorithms",
+    "RelativePath": "api/Clients/GetSigningAlgorithms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "algorithm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetStandardClaims",
+    "RelativePath": "api/Clients/GetStandardClaims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetTokenExpirations",
+    "RelativePath": "api/Clients/GetTokenExpirations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetTokenUsage",
+    "RelativePath": "api/Clients/GetTokenUsage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.Dtos.Common.SelectItemDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetProperty",
+    "RelativePath": "api/Clients/Properties/{propertyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientPropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "DeleteProperty",
+    "RelativePath": "api/Clients/Properties/{propertyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "GetSecret",
+    "RelativePath": "api/Clients/Secrets/{secretId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secretId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Clients.ClientSecretApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ClientsController",
+    "Method": "DeleteSecret",
+    "RelativePath": "api/Clients/Secrets/{secretId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "secretId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ConfigurationIssuesController",
+    "Method": "Get",
+    "RelativePath": "api/ConfigurationIssues",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration.ConfigurationIssueDto, Skoruba.Duende.IdentityServer.Admin.BusinessLogic, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.ConfigurationIssuesController",
+    "Method": "GetSummary",
+    "RelativePath": "api/ConfigurationIssues/GetSummary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration.ConfigurationIssueSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.DashboardController",
+    "Method": "GetDashboardIdentity",
+    "RelativePath": "api/Dashboard/GetDashboardIdentity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Dtos.DashboardIdentity.DashboardIdentityDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.DashboardController",
+    "Method": "GetDashboardIdentityServer",
+    "RelativePath": "api/Dashboard/GetDashboardIdentityServer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "auditLogsLastNumberOfDays",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Dashboard.DashboardDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "Get",
+    "RelativePath": "api/IdentityProviders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityProvider.IdentityProvidersApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "Post",
+    "RelativePath": "api/IdentityProviders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityProviderApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityProvider.IdentityProviderApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "Put",
+    "RelativePath": "api/IdentityProviders",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityProviderApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityProvider.IdentityProviderApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "Get",
+    "RelativePath": "api/IdentityProviders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityProvider.IdentityProviderApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "Delete",
+    "RelativePath": "api/IdentityProviders/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityProvidersController",
+    "Method": "CanInsertIdentityProvider",
+    "RelativePath": "api/IdentityProviders/CanInsertIdentityProvider",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "schema",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "Get",
+    "RelativePath": "api/IdentityResources",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourcesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "Post",
+    "RelativePath": "api/IdentityResources",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityResourceApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourceApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourceApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "Put",
+    "RelativePath": "api/IdentityResources",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityResourceApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourceApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "Get",
+    "RelativePath": "api/IdentityResources/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourceApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "Delete",
+    "RelativePath": "api/IdentityResources/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "GetProperties",
+    "RelativePath": "api/IdentityResources/{id}/Properties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourcePropertiesApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "PostProperty",
+    "RelativePath": "api/IdentityResources/{id}/Properties",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "identityResourcePropertyApi",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourcePropertyApiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourcePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "CanInsertIdentityResource",
+    "RelativePath": "api/IdentityResources/CanInsertIdentityResource",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "CanInsertIdentityResourceProperty",
+    "RelativePath": "api/IdentityResources/CanInsertIdentityResourceProperty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "GetProperty",
+    "RelativePath": "api/IdentityResources/Properties/{propertyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.IdentityResources.IdentityResourcePropertyApiDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.IdentityResourcesController",
+    "Method": "DeleteProperty",
+    "RelativePath": "api/IdentityResources/Properties/{propertyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.KeysController",
+    "Method": "Get",
+    "RelativePath": "api/Keys",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Key.KeysApiDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.KeysController",
+    "Method": "Get",
+    "RelativePath": "api/Keys/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Key.KeyApiDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.KeysController",
+    "Method": "Delete",
+    "RelativePath": "api/Keys/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.LogsController",
+    "Method": "AuditLog",
+    "RelativePath": "api/Logs/AuditLog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Event",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubjectIdentifier",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubjectName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Log.AuditLogsDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.PersistedGrantsController",
+    "Method": "Get",
+    "RelativePath": "api/PersistedGrants/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.PersistedGrants.PersistedGrantApiDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.PersistedGrantsController",
+    "Method": "Delete",
+    "RelativePath": "api/PersistedGrants/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.PersistedGrantsController",
+    "Method": "Get",
+    "RelativePath": "api/PersistedGrants/Subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.PersistedGrants.PersistedGrantSubjectsApiDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.PersistedGrantsController",
+    "Method": "GetBySubject",
+    "RelativePath": "api/PersistedGrants/Subjects/{subjectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.PersistedGrants.PersistedGrantsApiDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.PersistedGrantsController",
+    "Method": "DeleteBySubject",
+    "RelativePath": "api/PersistedGrants/Subjects/{subjectId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityRolesDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "duende.Shared.Dtos.Identity.IdentityRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityRoleDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "duende.Shared.Dtos.Identity.IdentityRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityRoleDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRoleClaims",
+    "RelativePath": "api/Roles/{id}/Claims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Roles.RoleClaimsApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteRoleClaims",
+    "RelativePath": "api/Roles/{id}/Claims",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRoleUsers",
+    "RelativePath": "api/Roles/{id}/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUsersDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostRoleClaims",
+    "RelativePath": "api/Roles/Claims",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleClaims",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Roles.RoleClaimApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.RolesController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PutRoleClaims",
+    "RelativePath": "api/Roles/Claims",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleClaims",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Roles.RoleClaimApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUsersDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "duende.Shared.Dtos.Identity.IdentityUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUserDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "api/Users",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "duende.Shared.Dtos.Identity.IdentityUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUserDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetUserClaims",
+    "RelativePath": "api/Users/{id}/Claims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserClaimsApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteUserClaims",
+    "RelativePath": "api/Users/{id}/Claims",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetUserProviders",
+    "RelativePath": "api/Users/{id}/Providers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserProvidersApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetRoleClaims",
+    "RelativePath": "api/Users/{id}/RoleClaims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "claimSearchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Roles.RoleClaimsApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetUserRoles",
+    "RelativePath": "api/Users/{id}/Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserRolesApiDto\u00601[[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostChangePassword",
+    "RelativePath": "api/Users/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "password",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserChangePasswordApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostUserClaims",
+    "RelativePath": "api/Users/Claims",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claim",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserClaimApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PutUserClaims",
+    "RelativePath": "api/Users/Claims",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claim",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserClaimApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetClaimUsers",
+    "RelativePath": "api/Users/ClaimType/{claimType}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUsersDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetClaimUsers",
+    "RelativePath": "api/Users/ClaimType/{claimType}/ClaimValue/{claimValue}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "claimValue",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "duende.Shared.Dtos.Identity.IdentityUsersDto",
+        "MediaTypes": [
+          "application/json",
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteUserProviders",
+    "RelativePath": "api/Users/Providers",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "provider",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserProviderDeleteApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostUserRoles",
+    "RelativePath": "api/Users/Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserRoleApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Controllers.UsersController\u006020[[duende.Shared.Dtos.Identity.IdentityUserDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken, duende.Admin.EntityFramework.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUsersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserRolesDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProviderDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserProvidersDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.IdentityUserChangePasswordDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimsDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityUserClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[duende.Shared.Dtos.Identity.IdentityRoleClaimDto, duende.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteUserRoles",
+    "RelativePath": "api/Users/Roles",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Skoruba.Duende.IdentityServer.Admin.UI.Api.Dtos.Users.UserRoleApiDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,15 @@
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\bin\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.deps.json
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\bin\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\bin\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\bin\Debug\net9.0\duende.Admin.EntityFramework.Shared.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\bin\Debug\net9.0\duende.Admin.EntityFramework.Shared.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.csproj.AssemblyReference.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.GeneratedMSBuildEditorConfig.editorconfig
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.AssemblyInfoInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.AssemblyInfo.cs
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.csproj.CoreCompileInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.A.A0883B35.Up2Date
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\refint\duende.Admin.EntityFramework.PostgreSQL.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\duende.Admin.EntityFramework.PostgreSQL.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.PostgreSQL\obj\Debug\net9.0\ref\duende.Admin.EntityFramework.PostgreSQL.dll

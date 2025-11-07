@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UpUIH17asg+v6AvcFkGBMkvBar3aSQ2S4tqiVJz4BGE=",
+  "Source": "duende.Admin.Api",
+  "BasePath": "_content/duende.Admin.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

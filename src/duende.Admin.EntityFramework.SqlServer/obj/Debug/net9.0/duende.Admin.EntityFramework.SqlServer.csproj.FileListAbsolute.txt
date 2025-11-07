@@ -1,0 +1,15 @@
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\bin\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.deps.json
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\bin\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\bin\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\bin\Debug\net9.0\duende.Admin.EntityFramework.Shared.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\bin\Debug\net9.0\duende.Admin.EntityFramework.Shared.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.csproj.AssemblyReference.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.AssemblyInfoInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.AssemblyInfo.cs
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.csproj.CoreCompileInputs.cache
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.A.E8DBDA5E.Up2Date
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\refint\duende.Admin.EntityFramework.SqlServer.dll
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\duende.Admin.EntityFramework.SqlServer.pdb
+D:\FormosProject\beltone\sample_source\duende\src\duende.Admin.EntityFramework.SqlServer\obj\Debug\net9.0\ref\duende.Admin.EntityFramework.SqlServer.dll

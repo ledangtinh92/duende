@@ -1,0 +1,197 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\bundle.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\bundle.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\cerulean\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\cerulean\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\cosmo\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\cosmo\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\cyborg\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\cyborg\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\darkly\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\darkly\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\flatly\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\flatly\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\journal\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\journal\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\litera\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\litera\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\lumen\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\lumen\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\lux\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\lux\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\materia\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\materia\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\minty\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\minty\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\pulse\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\pulse\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\sandstone\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\sandstone\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\simplex\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\simplex\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\sketchy\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\sketchy\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\slate\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\slate\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\solar\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\solar\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\spacelab\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\spacelab\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\superhero\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\superhero\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\united\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\united\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\themes\\yeti\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\themes\\yeti\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\web.css",
+      "PackagePath": "staticwebassets\\dist\\css\\web.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\css\\web.min.css",
+      "PackagePath": "staticwebassets\\dist\\css\\web.min.css"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\dist\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\dist\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\dist\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\dist\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\dist\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\dist\\js\\bundle.min.js",
+      "PackagePath": "staticwebassets\\dist\\js\\bundle.min.js"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\images\\skoruba-icon.png",
+      "PackagePath": "staticwebassets\\images\\skoruba-icon.png"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\js\\forgot-password.js",
+      "PackagePath": "staticwebassets\\js\\forgot-password.js"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\js\\qrcode.js",
+      "PackagePath": "staticwebassets\\js\\qrcode.js"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\js\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\js\\qrcode.min.js"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\js\\signin-redirect.js",
+      "PackagePath": "staticwebassets\\js\\signin-redirect.js"
+    },
+    {
+      "Id": "D:\\FormosProject\\beltone\\sample_source\\duende\\src\\duende.STS.Identity\\wwwroot\\js\\signout-redirect.js",
+      "PackagePath": "staticwebassets\\js\\signout-redirect.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.duende.STS.Identity.props",
+      "PackagePath": "build\\duende.STS.Identity.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.duende.STS.Identity.props",
+      "PackagePath": "buildMultiTargeting\\duende.STS.Identity.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.duende.STS.Identity.props",
+      "PackagePath": "buildTransitive\\duende.STS.Identity.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.duende.STS.Identity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.duende.STS.Identity.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

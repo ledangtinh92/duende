@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\duende.Admin\\duende.Admin.csproj",
+        "Action": "Start",
+        "DebugTarget": "duende.Admin"
+      },
+      {
+        "Path": "src\\duende.STS.Identity\\duende.STS.Identity.csproj",
+        "Action": "Start",
+        "DebugTarget": "duende.AspNetIdentity"
+      },
+      {
+        "Path": "src\\duende.Admin.Api\\duende.Admin.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "duende.Admin.Api"
+      }
+    ]
+  }
+]
