@@ -48,7 +48,7 @@ services:
       - 'Serilog__WriteTo__1__Args__connectionString=Server=db;Database=IdentityServerAdmin;User Id=sa;Password=${DB_PASSWORD:-Password_123};MultipleActiveResultSets=true;Encrypt=true;TrustServerCertificate=true'
       - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
-    command: dotnet duende.Admin.dll /seed
+    command: ["/seed"]
     depends_on:
       - db
       - duende.sts.identity

@@ -80,55 +80,84 @@
                 ]
             }
         ],
-        "Clients": [
+      "Clients": [
+        {
+          "ClientId": "MyClientId",
+          "ClientName": "MyClientId",
+          "ClientUri": "https://localhost:44303",
+          "AllowedGrantTypes": [
+            "authorization_code"
+          ],
+          "RequirePkce": true,
+          "ClientSecrets": [
             {
-                "ClientId": "MyClientId",
-                "ClientName": "MyClientId",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "authorization_code"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "MyClientSecret"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
-                "ClientId": "MyClientId_api_swaggerui",
-                "ClientName": "MyClientId_api_swaggerui",
-                "AllowedGrantTypes": [
-                    "authorization_code"
-                ],
-                "RequireClientSecret": false,
-                "RequirePkce": true,
-                "RedirectUris": [
-                    "https://localhost:44302/swagger/oauth2-redirect.html"
-                ],
-                "AllowedScopes": [
-                    "MyClientId_api"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44302"
-                ]
+              "Value": "MyClientSecret"
             }
-        ]
+          ],
+          "RedirectUris": [
+            "https://localhost:44303/signin-oidc"
+          ],
+          "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
+          "PostLogoutRedirectUris": [
+            "https://localhost:44303/signout-callback-oidc"
+          ],
+          "AllowedCorsOrigins": [
+            "https://localhost:44303"
+          ],
+          "AllowedScopes": [
+            "openid",
+            "email",
+            "profile",
+            "roles"
+          ]
+        },
+        {
+          "ClientId": "beltone_community",
+          "ClientName": "beltone_community",
+          "ClientUri": "https://localhost:3000",
+          "AllowedGrantTypes": [
+            "authorization_code"
+          ],
+          "RequirePkce": true,
+          "RedirectUris": [
+            "http://localhost:3000/api/auth/callback/duende-idp"
+          ],
+          "PostLogoutRedirectUris": [
+            "http://localhost:3000"
+          ],
+          "AllowedCorsOrigins": [
+            "http://localhost:3000"
+          ],
+          "ClientSecrets": [
+            {
+              "Value": "0nd1NC3W9REbiLvQWwyONT9gwmAWxYHOfih6Zr+vKps="
+            }
+          ],
+          "AllowedScopes": [
+            "openid",
+            "email",
+            "profile",
+            "roles"
+          ]
+        },
+        {
+          "ClientId": "MyClientId_api_swaggerui",
+          "ClientName": "MyClientId_api_swaggerui",
+          "AllowedGrantTypes": [
+            "authorization_code"
+          ],
+          "RequireClientSecret": false,
+          "RequirePkce": true,
+          "RedirectUris": [
+            "https://localhost:44302/swagger/oauth2-redirect.html"
+          ],
+          "AllowedScopes": [
+            "MyClientId_api"
+          ],
+          "AllowedCorsOrigins": [
+            "https://localhost:44302"
+          ]
+        }
+      ]
     }
 }
